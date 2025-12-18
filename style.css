@@ -8,7 +8,17 @@ body {
   font-family: Inter, system-ui, sans-serif;
   background: radial-gradient(circle at top, #1e293b, #020617);
   color: #e5e7eb;
-  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.section,
+.hero,
+header {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 /* HEADER */
@@ -16,58 +26,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
-  position: sticky;
-  top: 0;
-  background: rgba(2,6,23,0.8);
-  backdrop-filter: blur(12px);
-  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .logo {
   font-weight: 700;
   font-size: 20px;
-  letter-spacing: 1px;
 }
 
 nav a {
-  margin: 0 14px;
+  margin-left: 18px;
   text-decoration: none;
   color: #c7d2fe;
-  transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #38bdf8;
-}
-
-/* HERO */
-.hero {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  align-items: center;
-  padding: 120px 10%;
-  gap: 40px;
-  animation: fadeUp 1s ease forwards;
-}
-
-.hero h1 {
-  font-size: 64px;
-  background: linear-gradient(90deg, #38bdf8, #a855f7);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.hero p {
-  margin: 20px 0;
-  font-size: 18px;
-  color: #cbd5f5;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 14px 28px;
-  background: linear-gradient(90deg, #38bdf8, #6366f1);
-  color: #020617;
-  text-deco
+.toggle-btn {
+  backgr
