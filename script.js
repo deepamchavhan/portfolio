@@ -1,0 +1,6 @@
+const btn = document.querySelector(".toggle-btn");
+
+btn.onclick = () => {
+    document.body.classList.toggle("light");
+    btn.textContent = document.body.classList.contains("light") ? "☀️" : "🌙";
+};
